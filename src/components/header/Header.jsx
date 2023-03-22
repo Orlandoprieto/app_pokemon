@@ -12,32 +12,32 @@ const Header = () => {
 
             <nav className="header__nav">
                 <ul>
-                    <li>
-                        <Link to="/">Todos</Link>
+                    <li >
+                        <Link style={{color: 'white'}} to="/">Todos</Link>
                     </li>
 
                     <li>
-                        <Link to="/type/fire">Fuego</Link>
+                        <Link style={{color: 'white'}} to="/type/fire">Fuego</Link>
                     </li>
 
                     <li>
-                        <Link to="/type/electric">Electrico</Link>
+                        <Link style={{color: 'white'}} to="/type/electric">Electrico</Link>
                     </li>
 
                     <li>
-                        <Link to="/type/water">Agua</Link>
+                        <Link style={{color: 'white'}} to="/type/water">Agua</Link>
                     </li>
 
                     <li>
-                        <Link to="/type/rock">roca</Link>
+                        <Link style={{color: 'white'}} to="/type/rock">roca</Link>
                     </li>
 
                     <li>
-                        <Link to="/type/dragon">dragon</Link>
+                        <Link style={{color: 'white'}} to="/type/dragon">dragon</Link>
                     </li>
 
                     <li>
-                        <Link to="/type/fighting">Boxeador</Link>
+                        <Link style={{color: 'white'}} to="/type/fighting">Boxeador</Link>
                     </li>
 
                 </ul>
