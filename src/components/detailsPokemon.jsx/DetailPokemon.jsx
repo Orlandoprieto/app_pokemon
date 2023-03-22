@@ -17,7 +17,6 @@ const DetailPokemon = () => {
             .then(resp => resp.json())
             .then(resp => setAbility(resp.effect_entries))
 
-            console.log(ability)
     }, [id])
 
 

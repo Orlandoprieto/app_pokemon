@@ -11,13 +11,13 @@ const ContainerItems = () => {
 
     useEffect(() => {
         if (type === undefined) {
-            fetch('https://pokeapi.co/api/v2/pokemon/?offset=1&limit=50')
+            fetch('https://pokeapi.co/api/v2/pokemon/?offset=1&limit=20')
                 .then(resp => resp.json())
                 .then(resp => setPokemons(resp.results))
 
         } else {
             setPokemons([])
-            fetch(`https://pokeapi.co/api/v2/type/${type}`)
+            fetch(`https://pokeapi.co/api/v2/type/${type}/?offset=1&limit=20`)
                 .then(resp => resp.json())
                 .then(resp => setPokemons(resp.pokemon)) 
         }
@@ -30,7 +30,6 @@ const ContainerItems = () => {
                     <ItemPokemon 
                         key={pokemon.id}
                         url={(pokemon.pokemon) ? pokemon.pokemon.url : pokemon.url} />
-                    
                 )
             }            
         </div>
