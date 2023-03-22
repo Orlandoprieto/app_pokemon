@@ -5,9 +5,7 @@
     align-items: center;
     padding: 1rem;
     background-color: black;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+    
   }
   
   /* Estilos para el logo */
@@ -44,7 +42,6 @@
   /* Media Queries para pantallas pequeñas */
   @media only screen and (max-width: 600px) {
     .header {
-
         flex-direction: column;
     }
 
@@ -54,6 +51,7 @@
       width: 100%;
       text-align: center;
     }
+
   }
   
   /* Media Queries para pantallas medianas */
@@ -66,6 +64,15 @@
   
   /* Media Queries para pantallas grandes */
   @media only screen and (min-width: 900px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: black;
+      
+    }
+
     .header__nav li {
     
       margin: 0 1rem;
