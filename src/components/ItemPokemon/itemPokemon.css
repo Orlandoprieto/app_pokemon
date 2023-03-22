@@ -1,0 +1,48 @@
+.itemPokemon {
+    height: 370px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .itemPokemon__name {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+  }
+
+  
+
+  
+  .itemPokemon__sprite {
+    height: 70%;
+  }
+  
+  .itemPokemon__sprite img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .itemPokemon__buttons {
+    display: flex;
+    justify-content: center;
+    height: 15%;
+  }
+
+  .itemPokemon__buttons button{
+    background-color: black;
+    width: 95%;
+    height: 100%;
+    color: white;
+    border-radius: 5px;
+  }
+  
+
+  

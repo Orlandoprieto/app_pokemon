@@ -1,0 +1,72 @@
+/* Estilos para la cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+  
+  }
+  
+  /* Estilos para el logo */
+  .header__img img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Estilos para la navegación */
+  .header__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__nav li {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  /* Estilos para los enlaces de la navegación */
+  .header__nav li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .header__nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries para pantallas pequeñas */
+  @media only screen and (max-width: 600px) {
+    .header {
+
+        flex-direction: column;
+    }
+
+    .header__nav li {
+      margin: 1rem 0;
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* Media Queries para pantallas medianas */
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .header__nav li {
+      margin: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media Queries para pantallas grandes */
+  @media only screen and (min-width: 900px) {
+    .header__nav li {
+    
+      margin: 0 1rem;
+      font-size: 1.1rem;
+    }
+  }
