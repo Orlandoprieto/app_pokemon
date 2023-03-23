@@ -1,49 +1,39 @@
-import {Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 import logo from '../../assets/img/logo.png'
 import './header.css'
 
 const Header = () => {
-    return(
-        <header className="header">
-            <div className="header__img">
-                <img src={logo} alt="pokebola_logo" />
-            </div>
 
-            <nav className="header__nav">
-                <ul>
-                    <li >
-                        <Link style={{color: 'white'}} to="/">Todos</Link>
-                    </li>
+  const items = [
+    {nombre: "Todos", ruta: "/"},
+    {nombre: "Fuego", ruta: "/type/fire"},
+    {nombre: "Electrico", ruta: "/type/electric"},
+    {nombre: "Agua", ruta: "/type/water"},
+    {nombre: "Roca", ruta: "/type/rock"},
+    {nombre: "Dragon", ruta: "/type/dragon"},
+  ]
 
-                    <li>
-                        <Link style={{color: 'white'}} to="/type/fire">Fuego</Link>
-                    </li>
+  return (
+    <header className="header">
 
-                    <li>
-                        <Link style={{color: 'white'}} to="/type/electric">Electrico</Link>
-                    </li>
+      <div className="header__img">
+        <img src={logo} alt="pokebola_logo" />
+      </div>
 
-                    <li>
-                        <Link style={{color: 'white'}} to="/type/water">Agua</Link>
-                    </li>
-
-                    <li>
-                        <Link style={{color: 'white'}} to="/type/rock">roca</Link>
-                    </li>
-
-                    <li>
-                        <Link style={{color: 'white'}} to="/type/dragon">dragon</Link>
-                    </li>
-
-                    <li>
-                        <Link style={{color: 'white'}} to="/type/fighting">Boxeador</Link>
-                    </li>
-
-                </ul>
-            </nav>
-        </header>
-    )
+      <nav className="header__nav">
+        <ul>
+          {
+            items.map(item =>
+              <li >
+                <Link style={ {color: 'white'} } to={item.ruta} >{item.nombre}</Link>
+              </li>
+            )
+          }
+        </ul>
+      </nav>
+      
+    </header>
+  )
 }
 
 export default Header
