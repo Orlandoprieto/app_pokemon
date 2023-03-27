@@ -12,10 +12,12 @@ const DetailPokemon = () => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
             .then(resp => resp.json())
             .then(resp => setPokemon(resp))
+            .catch( err => new Error(err))
 
         fetch(`https://pokeapi.co/api/v2/ability/${id}`)
             .then(resp => resp.json())
             .then(resp => setAbility(resp.effect_entries))
+            .catch( err => new Error(err))
 
     }, [id])
 

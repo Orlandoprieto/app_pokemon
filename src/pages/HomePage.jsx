@@ -2,10 +2,15 @@ import Header from "../components/header/Header"
 import ContainerItems from "../components/Container/containerItems"
 
 const HomePage = () => {
-    return (     
+    return (   
         <>
-            <Header />
-            <ContainerItems />
+            <Header />  
+        
+            <main>
+                <section>
+                    <ContainerItems />
+                </section>
+            </main>
         </>
     )
 }

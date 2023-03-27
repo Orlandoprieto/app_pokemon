@@ -5,7 +5,12 @@ const TypePokemon = () => {
     return (     
         <>
             <Header />
-            <ContainerItems />
+
+            <main>
+                <section>
+                    <ContainerItems />
+                </section>
+            </main>
         </>
     )
 }

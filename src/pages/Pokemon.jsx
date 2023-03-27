@@ -5,7 +5,12 @@ const Pokemon = () => {
     return (
         <>
             <Header />
-            <DetailPokemon />
+            
+            <main>
+                <section>
+                    <DetailPokemon />
+                </section>
+            </main>
         </>
     )
 }
